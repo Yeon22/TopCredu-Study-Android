@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.test.my_intent2">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <!-- 텍스트 받기 -->
+            <intent-filter
+                android:icon="@android:mipmap/sym_def_app_icon"
+                android:label="문장 처리">
+                <action android:name="android.intent.action.SEND" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <!-- 파라미터가 문자열일 때만 연동 -->
+                <data android:mimeType="text/plain" />
+            </intent-filter>
+            <intent-filter
+                android:icon="@android:mipmap/sym_def_app_icon"
+                android:label="이미지 처리">
+                <!-- 이미지 하나 -->
+                <action android:name="android.intent.action.SEND" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="image/*" />
+            </intent-filter>
+            <intent-filter
+                android:icon="@android:mipmap/sym_def_app_icon"
+                android:label="멀티 이미지 처리">
+                <!-- 이미지 여러개 -->
+                <action android:name="android.intent.action.SEND_MULTIPLE" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="image/*" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/table"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true"
+    android:stretchColumns="*">
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_span="3">
+
+            <TextView
+                android:id="@+id/resultsBox"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="0" />
+        </ScrollView>
+
+        <Button
+            android:id="@+id/clear"
+            android:background="@drawable/btn_bg_c"
+            android:text="C" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <Button
+            android:id="@+id/path1"
+            android:background="@drawable/btn_bg_root"
+            android:text="(" />
+
+        <Button
+            android:id="@+id/path2"
+            android:background="@drawable/btn_bg_root"
+            android:text=")" />
+
+        <Button
+            android:id="@+id/invol"
+            android:background="@drawable/btn_bg_root"
+            android:text="^" />
+
+        <Button
+            android:id="@+id/root"
+            android:background="@drawable/btn_bg_root"
+            android:text="|" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <Button
+            android:id="@+id/b7"
+            android:background="@drawable/btn_bg"
+            android:text="7" />
+
+        <Button
+            android:id="@+id/b8"
+            android:background="@drawable/btn_bg"
+            android:text="8" />
+
+        <Button
+            android:id="@+id/b9"
+            android:background="@drawable/btn_bg"
+            android:text="9" />
+
+        <Button
+            android:id="@+id/plus"
+            android:background="@drawable/btn_bg2"
+            android:text="+" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <Button
+            android:id="@+id/b4"
+            android:background="@drawable/btn_bg"
+            android:text="4" />
+
+        <Button
+            android:id="@+id/b5"
+            android:background="@drawable/btn_bg"
+            android:text="5" />
+
+        <Button
+            android:id="@+id/b6"
+            android:background="@drawable/btn_bg"
+            android:text="6" />
+
+        <Button
+            android:id="@+id/minus"
+            android:background="@drawable/btn_bg2"
+            android:text="-" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <Button
+            android:id="@+id/b1"
+            android:background="@drawable/btn_bg"
+            android:text="1" />
+
+        <Button
+            android:id="@+id/b2"
+            android:background="@drawable/btn_bg"
+            android:text="2" />
+
+        <Button
+            android:id="@+id/b3"
+            android:background="@drawable/btn_bg"
+            android:text="3" />
+
+        <Button
+            android:id="@+id/multiply"
+            android:background="@drawable/btn_bg2"
+            android:text="*" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <Button
+            android:id="@+id/b0"
+            android:background="@drawable/btn_bg"
+            android:text="0" />
+
+        <Button
+            android:id="@+id/bdot"
+            android:background="@drawable/btn_bg2"
+            android:text="." />
+
+        <Button
+            android:id="@+id/equals"
+            android:background="@drawable/btn_bg2"
+            android:text="=" />
+
+        <Button
+            android:id="@+id/divide"
+            android:background="@drawable/btn_bg2"
+            android:text="/" />
+    </TableRow>
+
+</TableLayout>
